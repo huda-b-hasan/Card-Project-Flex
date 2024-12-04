@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color:#121826 ;
+    background-image: url(../image/Background_image@2x.png);
+    background-size: cover;
+    position: relative;
+    font-family: "Outfit", sans-serif;
+}
+
+/* Start title  */
+.text {
+    position: relative;
+    text-align: center;
+}
+
+.text h1 {
+    width: 440px;
+    color: #E5E7EB;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.4;
+}
+@media (max-width:640px){
+    .text h1 {
+        width: 93%;
+        font-size: 35px;
+        margin: 20px 10px 10px;
+
+    }
+}
+.text p {
+    color: #9DA3AE;
+    font-weight: 400;
+    font-size: 16px;
+}
+/* End title  */
+/* Start Section  */
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 70px 0;
+    flex-wrap: wrap; 
+    position: relative;
+}
+.section .card {
+    width:calc((100%/3) - 30px) ;
+    background-color: #212936;
+    border-radius: 6%;
+    padding: 17px;
+   
+}
+
+@media ( max-width:1024px ){
+    .section {
+        flex-wrap: wrap;
+    }
+    .section .card {
+        width:calc((100%/2) - 30px) ;
+        margin-bottom: 42px;
+    }
+    .section .card .text p {
+        padding: 10px;
+    }
+}
+@media (max-width:640px){
+    .section  {
+        flex-direction: column;
+    }
+    .section .card {
+        width:calc((100%) - 30px) ;
+        margin-bottom:50px ;
+    }
+}
+.section .card span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.section .card:first-child span {
+    background-color:#FCEED8;
+}
+.section .card:nth-child(2) span {
+    background-color: #DEE9FC;
+}
+.section .card:last-child span {
+    background-color: #FBE5E6;
+}
+.text1 {
+    margin-bottom: 10px;
+}
+.text1 h3 {
+    margin: 15px 0 15px;
+    color: #E5E7EB;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.text1 p {
+    line-height: 1.4;
+    color: #D2D5DA;
+    font-weight: 400;
+    font-size: 16px;
+    line-clamp: 3;
+}
+.section .card .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section .card img {
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: 20px;
+    border-radius: 5%;
+}
+
+/* End Section  */
